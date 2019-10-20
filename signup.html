@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>SIGNUP</title>
+<link rel ="stylesheet" href=signup.css>
+<body background="2.png">
+<div id="login-box">
+  <div class="left">
+<form action="login.html">
+    <h1>Sign up</h1>
+    
+    <input type="text" name="name" placeholder="Username" required>
+    <input type="text" name="email" placeholder="E-mail" required>
+    <input type="password" name="pass" placeholder="Password" required>
+    <input type="password" name="pass" placeholder="Retype password" required>
+    
+    <input type="submit" name="signup_submit" value="Sign me up" />
+  </div>
+  </form>
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+
+<script>
+            function validateForm() {
+                    var x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                            alert("Please Enter Your First Name");
+                     return false;
+                    }
+                    var a = document.forms["myForm"]["lastname"].value;
+                    if (a == "") {
+                    
+                        alert("Please Enter Your last Name");
+                        return false;
+                    }
+                    var c = document.forms["myForm"]["Email"].value;
+                    if (c == "") {
+                    
+                            alert("Please Enter Your Email");
+                     return false;
+                    }
+                    var e = document.forms["myForm"]["pass"].value;
+                    if (e == "") {
+                    
+                            alert("Please Enter Your Password");
+                     return false;
+                    }
+                    var p = document.forms["myForm"]["confirm"].value;
+                    if (p == "") {
+                        alert("Please Re-enter Your Password");
+                     return false;
+                    }
+                    var g = document.forms["myForm"]["phone"].value;
+                    if (g == "") {
+                    
+                            alert("Please Re-enter Your Phone Number");
+                     return false;
+                    }
+            }
+            
+        </script>
+</html>
